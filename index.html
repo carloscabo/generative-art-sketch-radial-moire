@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fast & dirty ultrasimple canvas animation boilerplate</title>
+  <title>Generative Art Sketches: Radial Moiré</title>
+  <meta property="og:title" content="Generative Art Sketches: Radial Moiré" />
+  <meta property="og:url" content="https://radial-moire.netlify.app/" />
+  <meta property="og:image" content="https://radial-moire.netlify.app/assets/screenshot.png" />
   <style>
     body {
       padding: 0;
@@ -12,12 +15,25 @@
       background-color: #323232;
       color: #ccc;
       overflow: hidden;
+      font-family: var(--tp-font-family, Roboto Mono, Source Code Pro, Menlo, Courier, monospace);
+      font-size: 11px;
+      color: #bbbcc4b3;
+    }
+    .author {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+
+    }
+    .author a {
+      text-decoration: dashed;
+      color: #58a6ff;
     }
   </style>
 </head>
 <body>
   <canvas width="1024" height="1024" id="main-canvas"></canvas>
-
+  <div class="author"><a target="_blank" href="//github.com/carloscabo/generative-art-sketch-radial-moire">Source code</a> @ gitHub by <a target="_blank" href="//twitter.com/putuko">@putuko<a></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/tweakpane@3.1.0/dist/tweakpane.min.js"></script>
 <script src="js/canvas-helpers.js"></script>
