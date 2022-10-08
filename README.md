@@ -4,7 +4,7 @@ Basado en este [tweet de @ThePrintArkive](https://twitter.com/ThePrintArkive/sta
 
 ![efecto de moiré](assets/screenshot.png)
 
-You can play with it online at: <https://radial-moire.netlify.app//>
+You can play with it online at: <https://radial-moire.netlify.app/>
 
 ### Starting a server
 
