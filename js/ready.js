@@ -1,6 +1,6 @@
 /*
   Fast and dirty proof of concept by Carlos Cabo (@putuko)
-  Please
+  Please don't take in account the code quality of this piece
 */
 console.log('La magia aquí');
 
@@ -52,6 +52,7 @@ let t_last_frame;
 function init() {
   window.requestAnimationFrame(draw);
 
+  console.log('Window', window.innerWidth, window.innerHeight);
   $canvas.width = window.innerWidth;
   $canvas.height = window.innerHeight;
 
@@ -155,7 +156,8 @@ function sunflower(x, y, inner_radius, outer_radius, petals_count ) {
   }
 }
 
-init();
+document.addEventListener('DOMContentLoaded', init, false);
+// init();
 
 
 
